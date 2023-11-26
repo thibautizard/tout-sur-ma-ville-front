@@ -19,8 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@utils": ["./src/lib/utils"]
+      "@tsv/*": ["./src/*"],
+      "@tsv/utils": ["./src/lib/utils"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

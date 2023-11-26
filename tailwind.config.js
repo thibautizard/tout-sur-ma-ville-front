@@ -69,7 +69,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        parisienne: ["Parisienne", "sans-serif"]
+        parisienne: ["Parisienne", "sans-serif"],
+        bayon: ["var(--font-bayon)", "sans-serif"]
       }
     }
   },
