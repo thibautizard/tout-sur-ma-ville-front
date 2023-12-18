@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter as FontSans, Bayon } from "next/font/google";
 import "./globals.css";
-import { cn } from "@tsv/utils";
+import { cn } from "../lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],

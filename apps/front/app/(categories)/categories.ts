@@ -1,7 +1,7 @@
-import { EducationIcon } from "@tsv/app/icons/education";
-import { FactoryIcon } from "@tsv/app/icons/factory";
-import { BabyIcon } from "@tsv/app/icons/baby";
-import { PoliticsIcon } from "@tsv/app/icons/politics";
+import { EducationIcon } from "../icons/education";
+import { FactoryIcon } from "../icons/factory";
+import { BabyIcon } from "../icons/baby";
+import { PoliticsIcon } from "../icons/politics";
 
 export interface CategoryType {
   id: string;
@@ -16,7 +16,7 @@ export interface CategoryType {
 export const CATEGORIES: CategoryType[] = [
   {
     id: "1",
-    tagName: "Demographie",
+    tagName: "Population",
     iconComponent: BabyIcon,
     color: "text-green-900",
     fill: "fill-green-900",
