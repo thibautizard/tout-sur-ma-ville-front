@@ -1,6 +1,6 @@
 "use client";
 
-import { Category } from "@tsv/app/category";
+import { Category } from "./Category";
 import { CATEGORIES, CategoryType } from "./categories";
 import React from "react";
 

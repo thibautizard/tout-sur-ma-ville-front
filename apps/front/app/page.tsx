@@ -1,5 +1,5 @@
-import { SearchBar } from "@tsv/app/Searchbar";
-import { CategoryList } from "./CategoryList";
+import { SearchBar } from "./Searchbar";
+import { CategoryList } from "./(categories)/CategoryList";
 export default function Home() {
   return (
     <main>
