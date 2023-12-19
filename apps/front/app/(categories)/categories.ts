@@ -5,49 +5,39 @@ import { PoliticsIcon } from "../icons/politics";
 
 export interface CategoryType {
   id: string;
-  tagName: string;
+  name: string;
   iconComponent: ({ className }: { className: string }) => JSX.Element;
-  color: string;
-  fill: string;
-  background: string;
+  variant: string;
   selected: boolean;
 }
 
 export const CATEGORIES: CategoryType[] = [
   {
     id: "1",
-    tagName: "Population",
+    name: "Population",
     iconComponent: BabyIcon,
-    color: "text-green-900",
-    fill: "fill-green-900",
-    background: "bg-green-100",
+    variant: "text-green-900 fill-green-900 bg-green-100",
     selected: true,
   },
   {
     id: "2",
-    tagName: "Economie",
+    name: "Economie",
     iconComponent: FactoryIcon,
-    color: "text-yellow-700",
-    fill: "fill-yellow-700",
-    background: "bg-yellow-100",
+    variant: "text-yellow-700 fill-yellow-700 bg-yellow-100",
     selected: true,
   },
   {
     id: "3",
-    tagName: "Education",
+    name: "Education",
     iconComponent: EducationIcon,
-    color: "text-purple-900",
-    fill: "fill-purple-900",
-    background: "bg-purple-200",
+    variant: "text-purple-900 fill-purple-900 bg-purple-200",
     selected: true,
   },
   {
     id: "4",
-    tagName: "Politique",
+    name: "Politique",
     iconComponent: PoliticsIcon,
-    color: "text-blue-900",
-    fill: "fill-blue-900",
-    background: "bg-blue-200",
+    variant: "text-blue-900 fill-blue-900 bg-blue-200",
     selected: true,
   },
 ];

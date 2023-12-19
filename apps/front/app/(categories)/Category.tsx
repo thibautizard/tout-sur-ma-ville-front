@@ -1,34 +1,41 @@
 import React from "react";
-import { CategoryType } from "./categories";
 import clsx from "clsx";
+
 export const Category = ({
-  category,
+  id,
+  name,
+  iconComponent,
+  variant,
+  selected,
   handleSelectedCategories,
 }: {
-  category: CategoryType;
+  id: string;
+  name: string;
+  iconComponent: ({ className }: { className: string }) => JSX.Element;
+  variant: string;
+  selected: boolean;
   handleSelectedCategories: (id: string) => void;
 }) => {
   const handleKeyUp = (event: any) => {
     if (event.key === "Enter") {
-      handleSelectedCategories(category.id);
+      handleSelectedCategories(id);
     }
   };
+
   return (
     <li
       className={clsx("flex cursor-pointer items-center gap-1.5 px-2.5 py-1", {
-        [`${category.color} ${category.background} ${category.fill}`]:
-          category.selected,
-        "bg-gray-200 fill-gray-700 text-gray-700 opacity-60":
-          !category.selected,
+        [variant]: selected,
+        "bg-gray-200 fill-gray-700 text-gray-700 opacity-60": !selected,
       })}
-      onClick={() => handleSelectedCategories(category.id)}
+      onClick={() => handleSelectedCategories(id)}
       onKeyUp={handleKeyUp}
     >
-      {category.iconComponent({
+      {iconComponent({
         className: `fill-inherit h-3`,
       })}
       <span className={`select-none font-bayon text-sm font-bold uppercase`}>
-        {category.tagName}
+        {name}
       </span>
     </li>
   );
