@@ -20,11 +20,11 @@ export const CategoryList = () => {
 
   return (
     <ul className="my-2 flex w-full justify-center gap-2">
-      {categories.map((CATEGORY) => (
+      {categories.map((category) => (
         <Category
-          category={CATEGORY}
+          {...category}
           handleSelectedCategories={handleSelectedCategories}
-          key={CATEGORY.id}
+          key={category.id}
         />
       ))}
     </ul>
