@@ -1,3 +1,7 @@
 {
+  "compilerOptions": {
+    "jsx": "react",
+    "forceConsistentCasingInFileNames": true
+  },
   "extends": "@tsv/typescript-config/base.json"
 }
