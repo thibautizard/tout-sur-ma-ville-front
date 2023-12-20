@@ -1,5 +1,5 @@
 import { SearchBar } from "./Searchbar";
-import { CategoryList } from "./(categories)/CategoryList";
+import { CategoryList } from "./_categories/CategoryList";
 export default function Home() {
   return (
     <main>
