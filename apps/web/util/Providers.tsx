@@ -5,13 +5,18 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
-const apolloClient = new ApolloClient({
-  uri: "http://localhost:3000/api/graphql",
-  cache: new InMemoryCache(),
-});
-
 const Providers = ({ children }: { children: React.ReactNode }) => {
-  const [queryClient] = React.useState(() => new QueryClient());
+  const queryClient = new QueryClient();
+  let origin = "";
+
+  if (typeof window !== "undefined") {
+    origin = window.location.origin;
+  }
+
+  const apolloClient = new ApolloClient({
+    uri: `${origin}/api/graphql`,
+    cache: new InMemoryCache(),
+  });
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
