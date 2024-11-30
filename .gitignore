@@ -1,0 +1,64 @@
+# Nuxt dev/build outputs
+/frontend/.output
+/frontend/.data
+/frontend/.nuxt
+/frontend/.nitro
+/frontend/.cache
+/frontend/dist
+
+# Node dependencies
+/frontend/node_modules
+
+# Logs
+/frontend/logs
+/frontend/*.log
+
+# Misc
+/frontend/.DS_Store
+/frontend/.fleet
+/frontend/.idea
+
+# Local env files
+/frontend/.env
+/frontend/.env.*
+/frontend/!.env.example
+
+
+### Elixir
+
+# The directory Mix will write compiled artifacts to.
+/backend/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/backend/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/backend/deps/
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/backend/doc/
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/backend/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+/backenderl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+/backend*.ez
+
+# Temporary files, for example, from tests.
+/backend/tmp/
+
+# Ignore package tarball (built via "mix hex.build").
+/backendtout_sur_ma_ville-*.tar
+
+# Ignore assets that are produced by build tools.
+/backend/priv/static/assets/
+
+# Ignore digested assets cache.
+/backend/priv/static/cache_manifest.json
+
+# In case you use Node.js/npm, you want to ignore these.
+/backendnpm-debug.log
+/backend/assets/node_modules/
