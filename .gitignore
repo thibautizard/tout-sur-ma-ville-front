@@ -5,6 +5,7 @@
 /frontend/.nitro
 /frontend/.cache
 /frontend/dist
+/frontend/.data
 
 # Node dependencies
 /frontend/node_modules
