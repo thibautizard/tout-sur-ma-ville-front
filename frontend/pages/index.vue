@@ -1,8 +1,12 @@
 <script>
 import '~/assets/css/main.css'
+import InputText from 'primevue/inputtext';
+
+const value="test";
 </script>
 <template>
-  <p class="text-red-500 text-2xl">Salut</p>
+  <p class="text-7xl mb-2">Tout sur ma ville</p>
+  <InputText type="text" v-model="value" />
 </template>
 <style scoped>
   p {

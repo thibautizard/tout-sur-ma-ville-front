@@ -11,10 +11,17 @@
   },
   "dependencies": {
     "@nuxt/fonts": "0.10.3",
+    "@primevue/themes": "^4.2.5",
     "@tailwindcss/vite": "4.0.0-beta.8",
     "nuxt": "^3.14.1592",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
     "tailwindcss": "4.0.0-beta.8",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.2.5",
+    "typescript": "^5.7.2"
   }
 }
