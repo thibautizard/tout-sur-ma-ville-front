@@ -7,6 +7,15 @@ export default defineNuxtConfig({
   devServer: { port: 3010 },
   devtools: { enabled: true },
 
+  // 🆎 SEO
+  app: {
+    head: {
+      title: 'Tout sur ma ville',
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
+  },
+
   modules: [
     // 📏 Linters
     '@nuxt/eslint',
